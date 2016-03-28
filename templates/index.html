@@ -1,9 +1,24 @@
 {% extends "templates/base.html" %}
 {% block content %} 
-	
 
-	<img src="static/home-face-pic.jpg" style="float:left; width:200px; margin-left: 30px; margin-right:30px;" />
-	<p>Welcome to my homepage! My name is Brady Mathieson and I am a sophomore at the University of Michigan, studying Computer Science and Asian Studies. I grew up in Chicago, IL. I am very interested in web design and big data, along with the relationship between humans and computers. Get to know me!</p>
+<link rel="stylesheet" type="text/css" href="static/real-world.css">
 
+<!-- <div class="col-md-7 col-md-offset-1 col-sm-4 col-sm-offset-1"> -->
+	<center><h1 id="huge-cout">cout << "Hello world!"<span class="blink">_</span></h1></center>
+
+<div class="home-image-thumbnails">
+	<div class="col-md-3 col-sm-6">
+		<img class="home-thumb img-responsive" src="static/img-home/thumb1.jpg" />
+	</div>
+	<div class="col-md-3 col-sm-6">
+		<img class="home-thumb img-responsive" src="static/img-home/thumb2.jpg" />
+	</div>
+	<div class="col-md-3 col-sm-6">
+		<img class="home-thumb img-responsive" src="static/img-home/thumb3.jpg" />
+	</div>
+	<div class="col-md-3 col-sm-6">
+		<img class="home-thumb img-responsive" src="static/img-home/thumb4.jpg" />
+	</div>
+</div>
 
 {%endblock%}

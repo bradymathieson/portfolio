@@ -1,6 +1,9 @@
 .container .row p {
 	margin-bottom: 20px;
-	line-height: 15px;
+}
+
+p {
+	line-height: 30px;
 }
 
 .navbar {
@@ -9,13 +12,17 @@
 
 .jumbotron {
 	height: 30em;
-	background-image: url("/static/jumbotron-home.jpg");
+	background-image: url("/static/img-home/jumbotron-home.jpg");
 	background-size: cover;
   	color: #fff;
 }
 
+.about-page {
+	background-image: url("/static/img-about/jumbotron-about.jpg");
+}
+
 .resume-page {
-	background-image: url("/static/jumbotron-resume.jpg");
+	background-image: url("/static/img-resume/jumbotron-resume.jpg");
 	background-size: cover;
 }
 
@@ -32,6 +39,32 @@
 
 .learn-more-btn {
 	opacity: 0.9;
+}
+
+.home-thumb {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 767px) {
+    #huge-cout {
+    	font-size: 40px;
+    }
+}
+
+/* TABLET */
+@media screen and (max-width: 991px) {
+    #huge-cout {
+    	font-size: 60px;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+	#huge-cout {
+    	font-size: 80px;
+    }
 }
 
 ::selection {

@@ -46,18 +46,18 @@ class PageHandler(webapp2.RequestHandler):
 
         if path == '/index.html':
             page_title = 'HOME'
-            page_header = 'Home'
+
+        if path == '/about.html':
+            page_title = 'ABOUT'
 
         elif path == '/resume.html':
             page_title = 'RESUME'
-            page_header = 'Resume'
 
         elif path == '/friends.html':
             page_title = 'FRIENDS'
-            page_header = 'Friends'
 
         template = JINJA_ENVIRONMENT.get_template('templates' + path)
-        self.response.write(template.render({'title': page_title, 'header': page_header}))
+        self.response.write(template.render({'title': page_title}))
 
 class LoginHandler(webapp2.RequestHandler):
     def get(self):
@@ -81,6 +81,7 @@ class LoginHandler(webapp2.RequestHandler):
 app = webapp2.WSGIApplication([
     ('/', PageHandler),
     ('/index.html', PageHandler),
+    ('/about.html', PageHandler),
     ('/friends.html', PageHandler),
     ('/resume.html', PageHandler),
     ('/login.html', LoginHandler),
