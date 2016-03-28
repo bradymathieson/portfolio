@@ -70,3 +70,7 @@ p {
 ::selection {
 	background: #2F2F25;
 }
+
+.intro-text h3{
+	line-height: 50px;
+}

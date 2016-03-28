@@ -2,9 +2,24 @@
 {% block content %} 
 
 <link rel="stylesheet" type="text/css" href="static/real-world.css">
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 
-<!-- <div class="col-md-7 col-md-offset-1 col-sm-4 col-sm-offset-1"> -->
-	<center><h1 id="huge-cout">cout << "Hello world!"<span class="blink">_</span></h1></center>
+	<center><h1 id="huge-cout" style="margin-bottom:40px;">cout << "Hello world!"</h1></center>
+
+	<hr>
+
+<div class="intro-text">
+<p><font face="menlo"><b>string</b> intro = </font></p>
+	<h3 style="text-align:right;">&quot;Welcome to my website! My name is <font face="menlo">&lt;i&gt;<i></font>Brady Mathieson</i><font face="menlo">&lt;/i&gt;</font> and I am a sophomore at the <font face="menlo">&lt;a href="umich.edu"&gt;</font><a href="http://umich.edu">University of Michigan</a><font face="menlo">&lt;/a&gt;</font> studying <font face="menlo">Computer Science<span class="blink">_</span></font> and <font style="font-family: 'Playfair Display', serif;">Asian Studies</font>. I am interested in the interaction between <span class="wobble">humans</span> and <span class="wobble">computers</span>. How can we use technology to make our lives <font face="menlo">&lt;i&gt;<i></font>easier?</i><font face="menlo">&lt;/i&gt;</font>&quot;;</h3>
+
+	<hr> 
+
+<p><font face="menlo"><b>char*</b> continue = </font></p>
+	<h3 style="text-align:right;">&quot;I also like to take pictures from time to time:&quot;;</h3>
+
+	<hr>
+
+<p><font face="menlo">&lt;body onload="showImages()"&gt;</font></p>
 
 <div class="home-image-thumbnails">
 	<div class="col-md-3 col-sm-6">
@@ -19,6 +34,13 @@
 	<div class="col-md-3 col-sm-6">
 		<img class="home-thumb img-responsive" src="static/img-home/thumb4.jpg" />
 	</div>
+</div>
+
+	<hr>
+
+<p><font face="menlo"><b>char[]</b> closer = </font></p>
+	<h3 style="text-align:right;">&quot;I invite you to click around my portfolio to see what I have been working on. Do not hesitate to contact me if you have any questions, concerns, or music recommendations. Have a great day!&quot;;</h3>
+
 </div>
 
 {%endblock%}
