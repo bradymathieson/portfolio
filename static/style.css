@@ -1,0 +1,39 @@
+.container .row p {
+	margin-bottom: 20px;
+	line-height: 15px;
+}
+
+.navbar {
+	opacity: 0.9;
+}
+
+.jumbotron {
+	height: 30em;
+	background-image: url("/static/jumbotron-home.jpg");
+	background-size: cover;
+  	color: #fff;
+}
+
+.resume-page {
+	background-image: url("/static/jumbotron-resume.jpg");
+	background-size: cover;
+}
+
+.jumbotron-content {
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 115px;
+}
+
+.container {
+  margin: 0px;
+  padding: 0px;
+}
+
+.learn-more-btn {
+	opacity: 0.9;
+}
+
+::selection {
+	background: #2F2F25;
+}
