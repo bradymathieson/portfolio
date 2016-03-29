@@ -50,8 +50,8 @@ class PageHandler(webapp2.RequestHandler):
         if path == '/about.html':
             page_title = 'ABOUT'
 
-        elif path == '/resume.html':
-            page_title = 'RESUME'
+        elif path == '/photo.html':
+            page_title = 'PHOTOS'
 
         elif path == '/friends.html':
             page_title = 'FRIENDS'
@@ -82,7 +82,7 @@ app = webapp2.WSGIApplication([
     ('/', PageHandler),
     ('/index.html', PageHandler),
     ('/about.html', PageHandler),
-    ('/friends.html', PageHandler),
+    ('/photo.html', PageHandler),
     ('/resume.html', PageHandler),
     ('/login.html', LoginHandler),
     ('/login2.html', LoginHandler)
