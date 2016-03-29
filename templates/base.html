@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="static/normalize.css">
 	<link rel="stylesheet" type="text/css" href="static/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="static/style.css">
 	<link rel="stylesheet" type="text/css" href="static/animate.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>Brady Mathieson - {{title}}</title>
 
 	<script type="text/javascript">
@@ -20,6 +24,7 @@
 			document.getElementsByClassName("jumbotron")[0].classList.add("resume-page");
 		} else if (window.location.href.indexOf("photo") > -1) {
 			document.getElementById("photo-link").setAttribute("class","active");
+			document.getElementsByClassName("jumbotron")[0].classList.add("photo-page");
 		} else if (window.location.href.indexOf("contact") > -1) {
 			document.getElementById("contact-link").setAttribute("class","active");
 		}
@@ -49,7 +54,7 @@
         <li id="home-link"><a href="/index.html">Home</a></li>
         <li id="about-link"><a href="/about.html">About</a></li>
         <li id="resume-link"><a href="/resume.html">Resumé</a></li>
-        <li id="photo-link"><a href="#">Photography</a></li>
+        <li id="photo-link"><a href="/photo.html">Photography</a></li>
         <li id="contact-link"><a href="#">Contact</a></li>
       </ul>
     </div>
@@ -64,7 +69,7 @@
         <p>"In the end we’re all just stories anyway, so just focus on becoming a really good and meaningful story."</p>
         <h4 style="float:right;">- Bruce Conforth</h4>
         <br />
-        <p><a class="btn btn-default btn-lg learn-more-btn">Learn more</a></p>
+        <p><a class="btn btn-default btn-lg learn-more-btn" href="/about.html">Learn more</a></p>
 	</div>
 </div>
 
@@ -77,8 +82,9 @@
     </div>
 
 </div>
-	
+
 <footer>
+	<hr>
 <center>
 	<p>Copyright &copy; Brady Mathieson. Follow me at @<a href="http://twitter.com/bradymath">bradymath</a>.</p>
 </center>

@@ -12,18 +12,21 @@ p {
 
 .jumbotron {
 	height: 30em;
-	background-image: url("/static/img-home/jumbotron-home.jpg");
+	background-image: url("/static/img/home/jumbotron-home.jpg");
 	background-size: cover;
   	color: #fff;
 }
 
 .about-page {
-	background-image: url("/static/img-about/jumbotron-about.jpg");
+	background-image: url("/static/img/about/jumbotron-about.jpg");
 }
 
 .resume-page {
-	background-image: url("/static/img-resume/jumbotron-resume.jpg");
-	background-size: cover;
+	background-image: url("/static/img/resume/jumbotron-resume.jpg");
+}
+
+.photo-page {
+	background-image: url("/static/img/photo/jumbotron-photo.jpg");
 }
 
 .jumbotron-content {
@@ -46,17 +49,17 @@ p {
 	margin-bottom: 20px;
 }
 
-/* MOBILE */
-@media screen and (max-width: 767px) {
-    #huge-cout {
-    	font-size: 40px;
-    }
-}
-
 /* TABLET */
 @media screen and (max-width: 991px) {
     #huge-cout {
     	font-size: 60px;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 767px) {
+    #huge-cout {
+    	font-size: 40px;
     }
 }
 
@@ -69,4 +72,8 @@ p {
 
 ::selection {
 	background: #2F2F25;
+}
+
+.intro-text h3{
+	line-height: 50px;
 }

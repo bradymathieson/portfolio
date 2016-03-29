@@ -1,0 +1,28 @@
+{% extends "templates/base.html" %}
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="static/photo.css">
+
+<script type="text/javascript">
+	function nextPhoto() {
+		document.getElementById("home-link").setAttribute("id","active");
+	}
+</script>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="portrait-gallery">
+            <img src="static/img/photo/portrait1.jpg" id="active" />
+            <img src="static/img/photo/portrait2.jpg" class="portrait-photo" />
+            <img src="static/img/photo/portrait3.jpg" class="portrait-photo" />
+            <img src="static/img/photo/portrait4.jpg" class="portrait-photo" />
+            <img src="static/img/photo/portrait5.jpg" class="portrait-photo" />
+            <img src="static/img/photo/portrait6.jpg" class="portrait-photo" />
+            <img src="static/img/photo/portrait7.jpg" class="portrait-photo" />
+            <img src="static/img/photo/portrait8.jpg" class="portrait-photo" />
+            <img src="static/img/photo/portrait9.jpg" class="portrait-photo" />
+        </div>
+    </div>
+</div>
+
+{% endblock %}
