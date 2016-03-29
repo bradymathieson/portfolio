@@ -44,14 +44,14 @@ class PageHandler(webapp2.RequestHandler):
         if len(path) == 1:
             path = '/index.html'
 
-        elif path == '/index.html':
+        if path == '/index.html':
             page_title = 'HOME'
+
+        elif path == '/resume.html':
+            page_title = 'RESUME'
 
         elif path == '/about.html':
             page_title = 'ABOUT'
-
-        elif path == '/photo.html':
-            page_title = 'PHOTOS'
 
         elif path == '/photo.html':
             page_title = 'PHOTOS'

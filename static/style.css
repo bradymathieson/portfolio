@@ -54,12 +54,31 @@ p {
     #huge-cout {
     	font-size: 60px;
     }
+    #picture-buffer {
+    	margin-top:75px;
+    }
 }
 
 /* MOBILE */
 @media screen and (max-width: 767px) {
     #huge-cout {
-    	font-size: 40px;
+    	display: none;
+    }
+
+    .jumbotron-content {
+    	margin-top: 20px;
+    }
+
+    #quote-credit {
+    	display: none;
+    }
+
+    #hello-world-about {
+    	font-size: 1.5em;
+    }
+
+    #picture-buffer {
+    	margin-top:10px;
     }
 }
 
@@ -68,10 +87,13 @@ p {
 	#huge-cout {
     	font-size: 80px;
     }
+    #picture-buffer {
+    	margin-top:75px;
+    }
 }
 
 ::selection {
-	background: #2F2F25;
+	background: #7F7F7F;
 }
 
 .intro-text h3{

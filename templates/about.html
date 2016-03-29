@@ -4,11 +4,12 @@
 <link rel="stylesheet" type="text/css" href="static/real-world.css">
 	
 <div class="col-md-4 col-sm-4">
-	<img src="static/img/home/home-face-pic.jpg" class="img-responsive img-circle" style="margin-top:75px;" />
+	<div id="picture-buffer"></div>
+	<img src="static/img/home/home-face-pic.jpg" class="img-responsive img-circle" />
 </div>
 
 <div class="col-md-7 col-md-offset-1 col-sm-7 col-sm-offset-1">
-	<h2 style="text-align:right;">cout << "Hello world!"<span class="blink">_</span></h2>
+	<h2 id="hello-world-about" style="text-align:right;">cout << "Hello world!"<span class="blink">_</span></h2>
 	
 	<br />
 
@@ -19,6 +20,10 @@
 	<p style="text-align: justify;">To learn more, I invite you to click around this website. Here, you will find my resumé, some of my projects (one of my largest being this website itself!), and hopefully learn more about me. As always, if you have any questions, do not hesitate to send me an email.</p>
 
 	<p style="text-align: justify;">Thanks for stopping by, and have a great day!</p>
+
+	<p>Best,</p><br />
+
+	<img src="static/img/about/signature.png" class="img-responsive" style="width:75%;float:right;" />
 </div>
 
 {%endblock%}
