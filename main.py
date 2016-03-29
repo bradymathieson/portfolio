@@ -50,8 +50,8 @@ class PageHandler(webapp2.RequestHandler):
         elif path == '/about.html':
             page_title = 'ABOUT'
 
-        elif path == '/resume.html':
-            page_title = 'RESUME'
+        elif path == '/photo.html':
+            page_title = 'PHOTOS'
 
         elif path == '/photo.html':
             page_title = 'PHOTOS'
