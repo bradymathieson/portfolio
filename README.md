@@ -11,7 +11,6 @@ Current features:
 Planned extras:
 - Github!
 - Ruby on Rails integration to allow users to leave messages, deployed on Heroku
-- Email verification of contact messages
 - CSV export
 - Dynamic photo gallery using JavaScript on the "Photography" page
 
@@ -19,3 +18,4 @@ To do:
 - Finish content for "Photography" and "Contact" pages
 - The extras
 - Check the top images on mobile to deal with shifting (especially on the "About" page... my face is cut out!)
+- Make the photo page load quicker!!
