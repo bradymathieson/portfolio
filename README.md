@@ -19,3 +19,4 @@ To do:
 - The extras
 - Check the top images on mobile to deal with shifting (especially on the "About" page... my face is cut out!)
 - Make the photo page load quicker!!
+- Collapse-menu on mobile
