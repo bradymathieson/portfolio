@@ -1,6 +1,52 @@
 {% extends "templates/base.html" %}
 {% block content %}
-	
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="static/galleria/galleria-1.4.2.min.js"></script>
+
+<style type="text/css">
+	.galleria { 
+		width: 100%;
+		height: 500px; 
+		background: #000 
+	}
+</style>
+
+<p>Landscape</p>
+<div class="galleria">
+    <img src="static/img/photo/landscape1.jpg">
+    <img src="static/img/photo/landscape2.jpg">
+    <img src="static/img/photo/landscape3.jpg">
+    <img src="static/img/photo/landscape4.jpg">
+    <img src="static/img/photo/landscape5.jpg">
+    <img src="static/img/photo/landscape6.jpg">
+    <img src="static/img/photo/landscape7.jpg">
+    <img src="static/img/photo/landscape8.jpg">
+    <img src="static/img/photo/landscape9.jpg">
+    <img src="static/img/photo/landscape10.jpg">
+    <img src="static/img/photo/landscape11.jpg">
+    <img src="static/img/photo/landscape12.jpg">
+    <img src="static/img/photo/landscape13.jpg">
+</div>
+
+<br />
+
+<p>Portrait</p>
+<div class="galleria">
+    <img src="static/img/photo/portrait1.jpg">
+    <img src="static/img/photo/portrait2.jpg">
+    <img src="static/img/photo/portrait3.jpg">
+    <img src="static/img/photo/portrait4.jpg">
+    <img src="static/img/photo/portrait5.jpg">
+    <img src="static/img/photo/portrait6.jpg">
+    <img src="static/img/photo/portrait7.jpg">
+    <img src="static/img/photo/portrait8.jpg">
+    <img src="static/img/photo/portrait9.jpg">
+</div>
+
+<script type="text/javascript">
+    Galleria.loadTheme('static/galleria/classic/galleria.classic.min.js');
+    Galleria.run('.galleria');
+</script>
 
 {% endblock %}
