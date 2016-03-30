@@ -56,29 +56,33 @@ class PageHandler(webapp2.RequestHandler):
         elif path == '/photo.html':
             page_title = 'PHOTOS'
 
-        elif path == '/friends.html':
-            page_title = 'FRIENDS'
+        elif path == '/contact_success.html':
+            page_title = 'THANK YOU'
+
 
         template = JINJA_ENVIRONMENT.get_template('templates' + path)
         self.response.write(template.render({'title': page_title}))
 
-class LoginHandler(webapp2.RequestHandler):
+
+class ContactHandler(webapp2.RequestHandler):
     def get(self):
-        template = JINJA_ENVIRONMENT.get_template('templates/login.html')
-        self.response.write(template.render({'title': 'LOGIN', 'header': 'Login'}))
+        template = JINJA_ENVIRONMENT.get_template('templates/contact.html')
+        self.response.write(template.render({'title': 'CONTACT'}))
 
+"""
     def post(self):
-        username = self.request.get('username')
-        password = self.request.get('password')
+        name = self.request.get('name')
+        email = self.request.get('email')
+        formdata = [name, email]
 
-        if (self.request.get('username') == 'Colleen' and self.request.get('password') == 'pass'):
-            template = JINJA_ENVIRONMENT.get_template('templates/login2.html')
-            self.response.write(template.render({'title': 'SUCCESS', 'header': 'Logged in...'}))
-        else:
-            logging.info("Incorrect username: " + username)
-            logging.info("Incorrect password: " + password)
-            template = JINJA_ENVIRONMENT.get_template('templates/login.html')
-            self.response.write(template.render({'title': 'LOGIN', 'header': 'Login', 'msg': 'Bad credentials. Try again.'}))
+        template = JINJA_ENVIRONMENT.get_template('templates/contact_success.html')
+        self.response.write(template.render({'title': 'SUCCESS'}))
+        """
+
+class ConfirmHandler(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template('templates/contact_success.html')
+        self.response.write(template.render({'title': 'CONFIRM'}))
 
 
 app = webapp2.WSGIApplication([
@@ -87,6 +91,6 @@ app = webapp2.WSGIApplication([
     ('/about.html', PageHandler),
     ('/photo.html', PageHandler),
     ('/resume.html', PageHandler),
-    ('/login.html', LoginHandler),
-    ('/login2.html', LoginHandler)
+    ('/contact.html', ContactHandler),
+    ('/contact_success.html', PageHandler)
 ], debug=True)

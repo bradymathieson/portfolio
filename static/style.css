@@ -12,9 +12,12 @@ p {
 
 .jumbotron {
 	height: 30em;
-	background-image: url("/static/img/home/jumbotron-home.jpg");
 	background-size: cover;
   	color: #fff;
+}
+
+.home-page {
+    background-image: url("/static/img/home/jumbotron-home.jpg");
 }
 
 .about-page {
@@ -27,6 +30,10 @@ p {
 
 .photo-page {
 	background-image: url("/static/img/photo/jumbotron-photo.jpg");
+}
+
+.contact-page {
+    background-image: url("/static/img/contact/jumbotron-contact.jpg");
 }
 
 .jumbotron-content {
