@@ -8,7 +8,6 @@ Current features:
   - Mobile view vs. Desktop view: restructuring
 - Bootstrap, completely customized
 - Photo gallery on the Photography page
-- 
 
 Planned extras:
 - Github!
