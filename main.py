@@ -45,19 +45,22 @@ class PageHandler(webapp2.RequestHandler):
             path = '/index.html'
 
         if path == '/index.html':
-            page_title = 'HOME'
+            page_title = 'Home'
 
         elif path == '/resume.html':
-            page_title = 'RESUME'
+            page_title = 'Resume'
 
         elif path == '/about.html':
-            page_title = 'ABOUT'
+            page_title = 'About'
 
         elif path == '/photo.html':
-            page_title = 'PHOTOS'
+            page_title = 'Photos'
+
+        elif path == '/projects.html':
+            page_title = 'Projects'
 
         elif path == '/contact_success.html':
-            page_title = 'THANK YOU'
+            page_title = 'Thank You!'
 
 
         template = JINJA_ENVIRONMENT.get_template('templates' + path)
@@ -67,7 +70,7 @@ class PageHandler(webapp2.RequestHandler):
 class ContactHandler(webapp2.RequestHandler):
     def get(self):
         template = JINJA_ENVIRONMENT.get_template('templates/contact.html')
-        self.response.write(template.render({'title': 'CONTACT'}))
+        self.response.write(template.render({'title': 'Contact'}))
 
 """
     def post(self):
@@ -79,11 +82,6 @@ class ContactHandler(webapp2.RequestHandler):
         self.response.write(template.render({'title': 'SUCCESS'}))
         """
 
-class ConfirmHandler(webapp2.RequestHandler):
-    def get(self):
-        template = JINJA_ENVIRONMENT.get_template('templates/contact_success.html')
-        self.response.write(template.render({'title': 'CONFIRM'}))
-
 
 app = webapp2.WSGIApplication([
     ('/', PageHandler),
@@ -92,5 +90,6 @@ app = webapp2.WSGIApplication([
     ('/photo.html', PageHandler),
     ('/resume.html', PageHandler),
     ('/contact.html', ContactHandler),
-    ('/contact_success.html', PageHandler)
+    ('/contact_success.html', PageHandler),
+    ('/projects.html', PageHandler)
 ], debug=True)

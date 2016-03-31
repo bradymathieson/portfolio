@@ -36,6 +36,10 @@ p {
     background-image: url("/static/img/contact/jumbotron-contact.jpg");
 }
 
+.projects-page {
+    background-image: url("/static/img/projects/jumbotron-projects.jpg");
+}
+
 .jumbotron-content {
 	margin-left: 50px;
 	margin-right: 50px;
