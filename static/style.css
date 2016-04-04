@@ -79,7 +79,7 @@ p {
 /* MOBILE */
 @media screen and (max-width: 767px) {
     #huge-cout {
-    	display: none;
+    	font-size: 20px;
     }
 
     .jumbotron-content {
