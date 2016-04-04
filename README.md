@@ -8,7 +8,7 @@ Features:
 - Interactive homepage (blinking text, hover over "humans" and "computers" to see shaky text)
 - Interactive JavaScript photo gallery on Photography page
 - Posting Wall, developed with Ruby on Rails (link on "Projects" page)
-- Facebook Login (link on "Projects" page)
+- Facebook Login (personalized message on homepage, login in footer)
 - Contact form with email summary sent to my email
 - Passes W3 validator and WAVE accessibility checker, and incredibly responsive! (try it out)
 - Deployed in Google App Engine, programmed in Python. Utilizing Jinja2 templates to allow for a base + template structure
