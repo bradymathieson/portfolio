@@ -87,7 +87,7 @@ p {
     	margin-top:10px;
     }
 
-    #intro-text h3 {
+    #intro-text h2 {
         font-size: 1.2em;
     }
 
@@ -119,7 +119,7 @@ p {
 	background: #7F7F7F;
 }
 
-#intro-text h3{
+#intro-text h2{
 	line-height: 50px;
 }
 
@@ -132,4 +132,8 @@ p {
     .galleria {
         height: 250px;
     }
+}
+
+.social-icons img {
+    height: 30px;
 }
