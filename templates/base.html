@@ -9,7 +9,7 @@
 	<script src="static/jquery-2.2.2.js"></script>
 	<script src="static/bootstrap.min.js"></script>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
 
 	<title>Brady Mathieson - {{title}}</title>
 
@@ -45,33 +45,31 @@
 </head>
 <body onload="toggleActive()">
 
-	<header>
-		
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brady Mathieson</a>
-    </div>
+<header>	
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Brady Mathieson</a>
+	    </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li id="home-link"><a href="/index.html">Home</a></li>
-        <li id="about-link"><a href="/about.html">About</a></li>
-        <li id="resume-link"><a href="/resume.html">Resumé</a></li>
-        <li id="photo-link"><a href="/photo.html">Photography</a></li>
-        <li id="projects-link"><a href="/projects.html">Projects</a></li>
-        <li id="contact-link"><a href="/contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li id="home-link"><a href="/index.html">Home</a></li>
+	        <li id="about-link"><a href="/about.html">About</a></li>
+	        <li id="resume-link"><a href="/resume.html">Resumé</a></li>
+	        <li id="photo-link"><a href="/photo.html">Photography</a></li>
+	        <li id="projects-link"><a href="/projects.html">Projects</a></li>
+	        <li id="contact-link"><a href="/contact.html">Contact</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
 </header>
 
 <div class="jumbotron">
@@ -83,7 +81,7 @@
 	</div>
 </div>
 
-<div class="row">
+<!-- <div class="row"> -->
     <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
 
     {% block content %}
@@ -91,13 +89,15 @@
 	{% endblock %}
     </div>
 
-</div>
+<!-- </div> -->
 
 <footer>
-	<hr>
-<center>
-	<p>Copyright &copy; Brady Mathieson. Follow me at @<a href="http://twitter.com/bradymath">bradymath</a>.</p>
-</center>
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<hr>
+		<center>
+			<p>Copyright &copy; Brady Mathieson. Follow me at @<a href="http://twitter.com/bradymath">bradymath</a>.</p>
+		</center>
+	</div>
 </footer>
 	
 </body>
