@@ -18,23 +18,25 @@ function validateForm() {
 
 <div class="container">
 	<div class="col-md-10">
-		<h1>Contact Form</h1>
-		<p>For the quickest response, either fill out this form or send me an email to <a href="mailto:bradmath@umich.edu">bradmath@umich.edu</a>. Thanks!</p>
 		<form name="contact-form" action="https://formspree.io/bradmath@umich.edu" method="POST" onsubmit="return validateForm();">
-		  <fieldset class="form-group">
-		    <label for="name">Name*</label>
-		    <input type="text" class="form-control" name="name" value="" id="name">
-		  </fieldset>
-		  <fieldset class="form-group">
-		    <label for="email">Email*</label>
-		    <input type="text" class="form-control" name="email" value="" id="email">
-		  </fieldset>
-		  <fieldset class="form-group">
-		    <label for="message">Message</label>
-		    <textarea class="form-control" name="message" rows="5" id="message"></textarea>
-		  </fieldset>
-		  <p><input type="submit" name="submit" value="Submit" class="btn btn-primary btn-lg"></p>
-		  <input type="hidden" name="_next" value="/contact_success.html" />
+			<fieldset class="form-group">
+				<legend><h2>Contact Form</h2></legend>
+				<p>For the quickest response, either fill out this form or send me an email to <a href="mailto:bradmath@umich.edu">bradmath@umich.edu</a>. Thanks!</p>
+
+				<label for="name">Name*</label>
+				<input type="text" class="form-control" name="name" value="" id="name">
+
+
+				<label for="email">Email*</label>
+				<input type="text" class="form-control" name="email" value="" id="email">
+
+
+				<label for="message">Message</label>
+				<textarea class="form-control" name="message" rows="5" id="message"></textarea>
+
+				<p><input type="submit" name="submit" value="Submit" class="btn btn-primary btn-lg"></p>
+				<input type="hidden" name="_next" value="/contact_success.html" />
+			</fieldset>
 		</form>
 	</div>
 </div>
