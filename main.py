@@ -63,9 +63,6 @@ class PageHandler(webapp2.RequestHandler):
         elif path == '/contact_success.html':
             page_title = 'Thank You!'
 
-        elif path == '/fb_login.html':
-            page_title = 'Login'
-
 
         template = JINJA_ENVIRONMENT.get_template('templates' + path)
         self.response.write(template.render({'title': page_title}))
@@ -85,6 +82,5 @@ app = webapp2.WSGIApplication([
     ('/resume.html', PageHandler),
     ('/contact.html', ContactHandler),
     ('/contact_success.html', PageHandler),
-    ('/projects.html', PageHandler),
-    ('/fb_login.html', PageHandler)
+    ('/projects.html', PageHandler)
 ], debug=True)
