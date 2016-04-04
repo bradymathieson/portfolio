@@ -7,16 +7,17 @@ Current features:
 - Responsivity
   - Mobile view vs. Desktop view: restructuring
 - Bootstrap, completely customized
+- Photo gallery on the Photography page
 
 Planned extras:
 - Github!
 - Ruby on Rails integration to allow users to leave messages, deployed on Heroku
-- CSV export
 - Dynamic photo gallery using JavaScript on the "Photography" page
+- Custom domain name
+- Email notifications of form submittions
 
 To do:
-- Finish content for "Photography" and "Contact" pages
-- The extras
-- Check the top images on mobile to deal with shifting (especially on the "About" page... my face is cut out!)
-- Make the photo page load quicker!!
+- Optimize the photography page
+- Fix font on the Posting Wall
+- Responsive checks (in particular, the header photos)
 - Collapse-menu on mobile
