@@ -1,15 +1,15 @@
 {% extends "templates/base.html" %}
 {% block content %} 
 
-<link rel="stylesheet" type="text/css" href="static/real-world.css">
+<link rel="stylesheet" type="text/css" href="static/real-world.css" property="stylesheet">
 	
 <div class="col-md-4 col-sm-4">
 	<div id="picture-buffer"></div>
-	<img src="static/img/home/home-face-pic.jpg" class="img-responsive img-circle" />
+	<img src="static/img/home/home-face-pic.jpg" class="img-responsive img-circle" alt="Professional Photo" />
 </div>
 
 <div class="col-md-7 col-md-offset-1 col-sm-7 col-sm-offset-1">
-	<h2 id="hello-world-about" style="text-align:right;">cout << "Hello world!"<span class="blink">_</span></h2>
+	<h2 id="hello-world-about" style="text-align:right;">cout &lt;&lt; "Hello world!"<span class="blink">_</span></h2>
 	
 	<br />
 
@@ -23,7 +23,7 @@
 
 	<p>Best,</p><br />
 
-	<img src="static/img/about/signature.png" class="img-responsive" style="width:75%;float:right;" />
+	<img src="static/img/about/signature.png" class="img-responsive" style="width:75%;float:right;" alt="signature" />
 </div>
 
 {%endblock%}
