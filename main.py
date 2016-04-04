@@ -24,11 +24,12 @@ import jinja2
 main.py
 BRADY MATHIESON - bradmath
 SI 206 - Agile Web Development
-Template Homework (Homework 3)
+Portfolio
 
-Created a four page portfolio with a login page, deployed at:
+Created a portfolio, deployed at:
 
-    http://template-homework-brady-si206.appspot.com
+    http://bradymath.co (!!!) or
+    http://brady-portfolio-206.appspot.com 
 
 """
 
@@ -62,6 +63,9 @@ class PageHandler(webapp2.RequestHandler):
         elif path == '/contact_success.html':
             page_title = 'Thank You!'
 
+        elif path == '/fb_login.html':
+            page_title = 'Login'
+
 
         template = JINJA_ENVIRONMENT.get_template('templates' + path)
         self.response.write(template.render({'title': page_title}))
@@ -72,16 +76,6 @@ class ContactHandler(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template('templates/contact.html')
         self.response.write(template.render({'title': 'Contact'}))
 
-"""
-    def post(self):
-        name = self.request.get('name')
-        email = self.request.get('email')
-        formdata = [name, email]
-
-        template = JINJA_ENVIRONMENT.get_template('templates/contact_success.html')
-        self.response.write(template.render({'title': 'SUCCESS'}))
-        """
-
 
 app = webapp2.WSGIApplication([
     ('/', PageHandler),
@@ -91,5 +85,6 @@ app = webapp2.WSGIApplication([
     ('/resume.html', PageHandler),
     ('/contact.html', ContactHandler),
     ('/contact_success.html', PageHandler),
-    ('/projects.html', PageHandler)
+    ('/projects.html', PageHandler),
+    ('/fb_login.html', PageHandler)
 ], debug=True)

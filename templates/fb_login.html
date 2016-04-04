@@ -1,0 +1,65 @@
+{% extends "templates/base.html" %}
+{% block content %}
+
+<script>
+  function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+
+    if (response.status === 'connected') {
+      printName();
+      showPhoto();
+    } else if (response.status === 'not_authorized') {
+      document.getElementById('status').innerHTML = '<h1>Please log ' +
+        'into this app.</h1>';
+    } else {
+      document.getElementById('status').innerHTML = '<h1>Please log ' +
+        'into Facebook.</h1>';
+    }
+  }
+
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '698534526916884',
+    cookie     : true,  
+    xfbml      : true,  
+    version    : 'v2.5'
+  });
+
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  function printName() {
+    console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me', function(response) {
+      console.log('Successful login for: ' + response.name);
+      document.getElementById('status').innerHTML =
+        '<h1>Thanks for logging in, ' + response.name + '!</h1>';
+    });
+  }
+</script>
+
+<fb:login-button scope="public_profile,email" autologoutlink="true" onlogin="checkLoginState();">
+</fb:login-button>
+
+<div id="status">
+</div>
+
+{% endblock %}
