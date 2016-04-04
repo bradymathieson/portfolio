@@ -32,7 +32,6 @@
 			document.getElementsByClassName("jumbotron")[0].classList.add("projects-page");
 		}
 
-
 		else {
 			document.getElementById("home-link").setAttribute("class","active");
 			document.getElementById("head-name").setAttribute("class", "animated bounceInLeft");
@@ -81,15 +80,11 @@
 	</div>
 </div>
 
-<!-- <div class="row"> -->
-    <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-
-    {% block content %}
-		I should never see this content.  It should be replaced.
-	{% endblock %}
-    </div>
-
-<!-- </div> -->
+<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+{% block content %}
+	I should never see this content.  It should be replaced.
+{% endblock %}
+</div>
 
 <footer>
 	<div class="col-md-12 col-sm-12 col-xs-12">

@@ -87,6 +87,22 @@ p {
     	margin-top:10px;
     }
 
+    #intro-text h3 {
+        font-size: 1.2em;
+    }
+
+    .home-page {
+        background-image: url("/static/img/home/jumbotron-home-mobile.jpeg");
+    }
+
+    .about-page {
+        background-image: url("/static/img/about/jumbotron-about-mobile.jpg");
+    }
+
+    .projects-page {
+        background-image: url("/static/img/projects/jumbotron-projects-mobile.jpg");
+    }
+
 }
 
 /* DESKTOP */
